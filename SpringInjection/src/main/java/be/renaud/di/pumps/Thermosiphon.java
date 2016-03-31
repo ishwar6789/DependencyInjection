@@ -1,6 +1,6 @@
-package be.renaud.di.springconfig.pumps;
+package be.renaud.di.pumps;
 
-import be.renaud.di.springconfig.heaters.Heater;
+import be.renaud.di.heaters.Heater;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class Thermosiphon implements Pump {

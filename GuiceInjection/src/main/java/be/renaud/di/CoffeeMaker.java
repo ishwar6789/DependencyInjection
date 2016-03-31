@@ -2,14 +2,14 @@ package be.renaud.di;
 
 import be.renaud.di.heaters.Heater;
 import be.renaud.di.pumps.Pump;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.google.inject.Inject;
 
 public class CoffeeMaker {
 
-    @Autowired
+    @Inject
     private Pump pump;
 
-    @Autowired
+    @Inject
     private Heater heater;
 
     public void makeCoffee(){

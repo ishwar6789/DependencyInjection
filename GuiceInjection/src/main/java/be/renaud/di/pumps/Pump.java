@@ -1,4 +1,4 @@
-package be.renaud.di.springconfig.pumps;
+package be.renaud.di.pumps;
 
 public interface Pump {
     void pump();

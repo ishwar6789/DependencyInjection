@@ -1,4 +1,4 @@
-package be.renaud.di.springconfig.heaters;
+package be.renaud.di.heaters;
 
 public interface Heater {
 

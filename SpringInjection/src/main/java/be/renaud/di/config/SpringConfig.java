@@ -1,10 +1,10 @@
-package be.renaud.di.springconfig;
+package be.renaud.di.config;
 
 import be.renaud.di.CoffeeMaker;
-import be.renaud.di.springconfig.heaters.ElectricHeater;
-import be.renaud.di.springconfig.heaters.Heater;
-import be.renaud.di.springconfig.pumps.Pump;
-import be.renaud.di.springconfig.pumps.Thermosiphon;
+import be.renaud.di.heaters.ElectricHeater;
+import be.renaud.di.heaters.Heater;
+import be.renaud.di.pumps.Pump;
+import be.renaud.di.pumps.Thermosiphon;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
