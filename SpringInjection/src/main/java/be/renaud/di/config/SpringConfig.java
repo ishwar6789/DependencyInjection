@@ -7,18 +7,21 @@ import be.renaud.di.pumps.Pump;
 import be.renaud.di.pumps.Thermosiphon;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Scope;
 
 @Configuration
 public class SpringConfig {
 
     @Bean
+    @Scope(value = "prototype")
     CoffeeMaker coffeeMaker() {
-        return new CoffeeMaker();
+        return new CoffeeMaker(heater(), pump());
     }
 
     @Bean
+    @Scope(value = "prototype")
     Pump pump(){
-        return new Thermosiphon();
+        return new Thermosiphon(heater());
     }
 
     @Bean

@@ -4,7 +4,6 @@ import javax.inject.Inject;
 
 import be.renaud.di.heaters.Heater;
 
-
 public class Thermosiphon implements Pump {
     private final Heater heater;
 

@@ -6,18 +6,19 @@ import com.google.inject.Inject;
 
 public class CoffeeMaker {
 
-    @Inject
     private Pump pump;
-
-    @Inject
     private Heater heater;
 
-    public void makeCoffee(){
-        System.out.println("Coffeemaker: Starting to make coffee... ");
-        System.out.println("Coffeemaker: Asking pump to pump water... ");
+    @Inject CoffeeMaker(Heater heater, Pump pump) {
+        this.heater = heater;
+        this.pump = pump;
+    }
+
+    public void brew() {
+        System.out.println();
+        heater.on();
         pump.pump();
-        System.out.println("Coffeemaker: Asking heater to heat pumped water... ");
-        heater.heat();
-        System.out.println("Your coffee is ready!");
+        System.out.println(" [_]P coffee! [_]P ");
+        heater.off();
     }
 }

@@ -12,7 +12,7 @@ public class Application {
 
         CoffeeMaker myCoffeeMaker = injector.getInstance(CoffeeMaker.class);
 
-        myCoffeeMaker.makeCoffee();
+        myCoffeeMaker.brew();
     }
 }
 

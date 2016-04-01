@@ -4,12 +4,17 @@ import be.renaud.di.heaters.Heater;
 import org.springframework.beans.factory.annotation.Autowired;
 
 public class Thermosiphon implements Pump {
+
+    private final Heater heater;
+
     @Autowired
-    private Heater heater;
+    public Thermosiphon(Heater heater) {
+        this.heater = heater;
+    }
 
     public void pump() {
-        System.out.println("Thermosiphon: Starting to pump water...");
-        System.out.println("Thermosiphon: Asking heater to heat water... ");
-        heater.heat();
+        if (heater.isHot()) {
+            System.out.println("=> => pumping => =>");
+        }
     }
 }

@@ -13,7 +13,7 @@ public class Application {
         ApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
 
         CoffeeMaker myCoffeeMaker = context.getBean(CoffeeMaker.class);
-        myCoffeeMaker.makeCoffee();
+        myCoffeeMaker.brew();
     }
 }
 
