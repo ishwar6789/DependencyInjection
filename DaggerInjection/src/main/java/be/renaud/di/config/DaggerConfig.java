@@ -1,4 +1,6 @@
-package be.renaud.di.modules;
+package be.renaud.di.config;
+
+import javax.inject.Singleton;
 
 import be.renaud.di.heaters.ElectricHeater;
 import be.renaud.di.heaters.Heater;
@@ -8,8 +10,9 @@ import dagger.Module;
 import dagger.Provides;
 
 @Module
-public class DripCoffeeModule {
-    @Provides static Heater provideHeater() {
+public class DaggerConfig {
+    @Provides @Singleton
+    static Heater provideHeater() {
         return new ElectricHeater();
     }
 

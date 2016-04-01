@@ -15,6 +15,7 @@ public class CoffeeMaker {
     }
 
     public void brew() {
+        System.out.println();
         heater.get().on();
         pump.pump();
         System.out.println(" [_]P coffee! [_]P ");
