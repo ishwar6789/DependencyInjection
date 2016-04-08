@@ -23,8 +23,13 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="DaggerInjection" />
-        <module name="DependencyInjection" />
         <module name="GuiceInjection" />
+      </profile>
+      <profile default="false" name="Annotation profile for SpringInjection" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
         <module name="SpringInjection" />
       </profile>
     </annotationProcessing>
