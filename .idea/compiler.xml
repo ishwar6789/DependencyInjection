@@ -23,14 +23,15 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="DaggerInjection" />
+        <module name="DependencyInjection" />
         <module name="GuiceInjection" />
         <module name="SpringInjection" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="DaggerInjection" target="1.5" />
-      <module name="GuiceInjection" target="1.5" />
-      <module name="SpringInjection" target="1.5" />
+    <bytecodeTargetLevel target="1.8">
+      <module name="DaggerInjection" target="1.8" />
+      <module name="GuiceInjection" target="1.8" />
+      <module name="SpringInjection" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
