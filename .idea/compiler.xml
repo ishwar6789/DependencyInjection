@@ -35,9 +35,9 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="DaggerInjection" target="" />
-      <module name="GuiceInjection" target="" />
-      <module name="SpringInjection" target="" />
+      <module name="DaggerInjection" target="1.5" />
+      <module name="GuiceInjection" target="1.5" />
+      <module name="SpringInjection" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

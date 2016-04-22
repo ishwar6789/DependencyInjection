@@ -8,6 +8,7 @@ public class CleaningService extends AbstractHelper {
     private CleaningTool cleaningTool;
 
     public void doJob() {
+        super.doJob();
         cleaningTool.clean();
     }
 
