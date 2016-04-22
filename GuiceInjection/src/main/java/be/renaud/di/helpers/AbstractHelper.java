@@ -1,5 +1,7 @@
 package be.renaud.di.helpers;
 
+import static java.lang.String.format;
+
 public abstract class AbstractHelper implements DomesticHelp{
     private String name;
     private float rate;
@@ -18,5 +20,10 @@ public abstract class AbstractHelper implements DomesticHelp{
 
     public void setRate(float rate) {
         this.rate = rate;
+    }
+
+    @Override
+    public void doJob(){
+        System.out.println(format("%s is working!", name));
     }
 }

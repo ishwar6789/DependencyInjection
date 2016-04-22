@@ -16,6 +16,7 @@ public class Application {
         HelpTeam teamArcher = context.getBean("teamArcher", HelpTeam.class);
 
         teamJaneMary.doJob();
+        System.out.println();
         teamArcher.doJob();
 
     }

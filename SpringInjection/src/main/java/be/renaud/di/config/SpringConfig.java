@@ -14,6 +14,7 @@ import be.renaud.di.cleaningTools.Bucket;
 import be.renaud.di.cleaningTools.CleaningTool;
 import be.renaud.di.cleaningTools.Sponge;
 import be.renaud.di.cleaningTools.VacuumCleaner;
+import be.renaud.di.helpers.AbstractHelper;
 import be.renaud.di.helpers.DomesticHelp;
 import be.renaud.di.services.CleaningService;
 
@@ -41,7 +42,7 @@ public class SpringConfig {
     }
 
     @Bean
-    CleaningService jane(){
+    AbstractHelper jane(){
         CleaningService jane = new CleaningService();
         jane.setName("Jane");
         jane.setRate(2.5f);
@@ -50,7 +51,7 @@ public class SpringConfig {
     }
 
     @Bean
-    CleaningService mary(){
+    AbstractHelper mary(){
         CleaningService mary = new CleaningService();
         mary.setName("Mary");
         mary.setRate(4f);
@@ -59,21 +60,21 @@ public class SpringConfig {
     }
 
     @Bean
-    CleaningService lana(){
-        CleaningService jane = new CleaningService();
-        jane.setName("Lana");
-        jane.setRate(5.5f);
-        jane.setCleaningTool(bucket());
-        return jane;
+    AbstractHelper lana(){
+        CleaningService lana = new CleaningService();
+        lana.setName("Lana");
+        lana.setRate(5.5f);
+        lana.setCleaningTool(bucket());
+        return lana;
     }
 
     @Bean
-    CleaningService archer(){
-        CleaningService mary = new CleaningService();
-        mary.setName("Archer");
-        mary.setRate(7.5f);
-        mary.setCleaningTool(vacuumCleaner());
-        return mary;
+    AbstractHelper archer(){
+        CleaningService archer = new CleaningService();
+        archer.setName("Archer");
+        archer.setRate(7.5f);
+        archer.setCleaningTool(vacuumCleaner());
+        return archer;
     }
 
     @Bean
