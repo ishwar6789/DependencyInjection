@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DaggerInjection/DaggerInjection.iml" filepath="$PROJECT_DIR$/DaggerInjection/DaggerInjection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GuiceInjection/Guice.iml" filepath="$PROJECT_DIR$/GuiceInjection/Guice.iml" />
       <module fileurl="file://$PROJECT_DIR$/GuiceInjection/GuiceInjection.iml" filepath="$PROJECT_DIR$/GuiceInjection/GuiceInjection.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringInjection/SpringInjection.iml" filepath="$PROJECT_DIR$/SpringInjection/SpringInjection.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringInjection/SpringInjection.iml" filepath="$PROJECT_DIR$/SpringInjection/SpringInjection.iml" />
     </modules>
   </component>

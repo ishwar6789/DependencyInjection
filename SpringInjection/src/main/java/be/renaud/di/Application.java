@@ -1,24 +1,15 @@
-package be.renaud.di;
+/*package be.renaud.di;
 
+import be.renaud.di.config.SpringConfig;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
 
-@ComponentScan
-@Configuration
 public class Application {
 
     public static void main(String[] args) {
-        ApplicationContext context = new AnnotationConfigApplicationContext(Application.class);
+        ApplicationContext context = new AnnotationConfigApplicationContext(SpringConfig.class);
 
-        HelpTeam teamJaneMary = context.getBean("teamJaneMary", HelpTeam.class);
-        HelpTeam teamArcher = context.getBean("teamArcher", HelpTeam.class);
-
-        teamJaneMary.doJob();
-        System.out.println();
-        teamArcher.doJob();
 
     }
 }
-
+*/

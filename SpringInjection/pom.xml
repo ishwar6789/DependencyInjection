@@ -8,25 +8,28 @@
     <artifactId>SpringInjection</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <properties>
+        <version.java>1.8</version.java>
+        <version.spring>4.2.5.RELEASE</version.spring>
+        <version.caliper>0.5-rc1</version.caliper>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context</artifactId>
-            <version>4.2.5.RELEASE</version>
+            <version>${version.spring}</version>
         </dependency>
 
         <!--Testing-->
+        <!-- http://mvnrepository.com/artifact/com.google.caliper/caliper -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
+            <groupId>com.google.caliper</groupId>
+            <artifactId>caliper</artifactId>
+            <version>${version.caliper}</version>
         </dependency>
+
     </dependencies>
-
-    <properties>
-        <java.version>1.8</java.version>
-    </properties>
-
 
     <build>
         <plugins>
@@ -38,8 +41,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>${version.java}</source>
+                    <target>${version.java}</target>
                 </configuration>
             </plugin>
         </plugins>
