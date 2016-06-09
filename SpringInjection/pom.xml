@@ -11,7 +11,7 @@
     <properties>
         <version.java>1.8</version.java>
         <version.spring>4.2.5.RELEASE</version.spring>
-        <version.caliper>0.5-rc1</version.caliper>
+        <version.junit>4.12</version.junit>
     </properties>
 
     <dependencies>
@@ -22,29 +22,11 @@
         </dependency>
 
         <!--Testing-->
-        <!-- http://mvnrepository.com/artifact/com.google.caliper/caliper -->
+        <!-- http://mvnrepository.com/artifact/junit/junit -->
         <dependency>
-            <groupId>com.google.caliper</groupId>
-            <artifactId>caliper</artifactId>
-            <version>${version.caliper}</version>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${version.junit}</version>
         </dependency>
-
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>${version.java}</source>
-                    <target>${version.java}</target>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
 </project>
