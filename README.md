@@ -1,2 +1,2 @@
 # DependencyInjection
-# Javascript Dependency Injection lets make some changes now
+# Javascript Dependency Injection lets make some changes up
